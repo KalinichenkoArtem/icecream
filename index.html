@@ -4,21 +4,64 @@
             <meta charset="UTF-8" >
             <meta http-equiv="X-UA-Compatible" content="IE=edge" >
             <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-            <meta name="description" content="WebStudio" >
-            <title>WebStudio</title>
+            <meta name="description" content="Ice cream" >
+            <title>Ice cream</title>
 
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Seymour+One&display=swap"
                 rel="stylesheet">
 
             <link rel="stylesheet" href="./css/normalize.css">
             <link rel="stylesheet" href="./css/main.min.css">
         </head>        
-        <body class="page">
+        <body>
             <main>
-                <section class="section-hero">
-                    
+                <section class="container hero">
+                    <h1 class="hero__title">Ice cream made with <span class="hero__title-span">passion</span>
+                    </h1>
+                    <ul class="hero__list">
+                        <li class="hero__item">
+                            16
+                        </li>
+                        <li class="hero__sub-item">
+                            cafes
+                        </li>
+                    </ul>
+                    <ul class="hero__sub-list">
+                        <li class="hero__item">
+                            23
+                        </li>
+                        <li class="hero__sub-item">
+                            food trucks
+                        </li>
+                    </ul>
+                    <div class="hero__div">
+                        <button type="button" class="hero__button">Products
+                        </button>
+                        <a class="hero__link" href="">How it's made?
+                        </a>
+                    </div>
+                    <div class="hero__sub-div">
+                    <picture>
+                        <source media="(max-width: 1199px)" srcset="./images/ice-cream-on-plate-152.png 1x, ./images/ice-cream-on-plate-152@2x.png 2x">
+                        <source media="(min-width: 1200px)" srcset="./images/ice-cream-on-plate-225.png 1x, ./images/ice-cream-on-plate-225@2x.png 2x">
+                    <img class="hero__img" srcset="./images/ice-cream-on-plate-152.png 1x, ./images/ice-cream-on-plate-152@2x.png 2x" src="./images/ice-cream-on-plate-152.png" alt="Photo of ice cream on a plate">
+                    </picture>
+                    <div class="hero__text-div">
+                    <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <img class="hero__img-text" srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x" src="./images/arrow.png" alt="Right arrow" width="40px">
+                    </div>
+                    <picture>
+                        <div class="aa">
+                        <source media="(max-width: 767px)" srcset="./images/big-ice-cream-157.png 1x, ./images/big-ice-cream-157@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="./images/big-ice-cream-257.png 1x, ./images/big-ice-cream-257@2x.png 2x">
+                        <source media="(min-width: 1200px)" srcset="./images/big-ice-cream-456.png 1x, ./images/big-ice-cream-456@2x.png 2x">
+                        <img class="hero__main-img" srcset="./images/big-ice-cream-157.png 1x, ./images/big-ice-cream-157@2x.png 2x" src="./images/big-ice-cream-157.png" alt="Big ice cream">
+                    </picture>
+                    </div>
+                    </div>
                 </section>
         </body>
     </html>
