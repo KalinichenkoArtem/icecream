@@ -4,11 +4,11 @@
     background-color: #84A278;
 
     @media screen and (min-width:768px) {
-        padding: 72px 32px 0 32px;
+        padding: 72px 32px 13px 32px;
     }
 
     @media screen and (min-width:1200px) {
-        padding: 74px 16px 0 17px;
+        padding: 74px 16px 65px 17px;
     }
     
     &__title {
@@ -32,7 +32,7 @@
 
         @media screen and (min-width:1200px) {
             margin-bottom: 28px;
-            width: 367px;
+            min-width: 367px;
             font-size: 38px;
             line-height: 1.26;
         }
@@ -43,11 +43,13 @@
         line-height: 96.5%;
     
         @media screen and (min-width:768px) {
+            width: 182px;
             font-size: 24px;
             line-height: 0.54;
         }
 
         @media screen and (min-width:1200px) {
+            
             font-size: 38px;
             line-height: 1.26;
         }
@@ -55,6 +57,10 @@
 
     &__list, &__sub-list {
         list-style-type: none;
+    }
+
+    &__list {
+        margin-bottom: 16px;
     }
 
     &__item {
@@ -104,7 +110,7 @@
         align-items: center;
         text-align: center;
         justify-content: center;
-        margin-right: 8px;
+        margin-right: 18px;
 
         width: 62px;
         height: 24px;
@@ -123,7 +129,7 @@
         border-radius: 8px;
  
         @media screen and (min-width:1200px) {
-            margin-right: 12px;
+            margin-right: 34px;
             padding: 12px 34px;
             width: 134px;
             height: 42px;
@@ -158,6 +164,7 @@
     
         @media screen and (min-width:768px) {
             margin-bottom: 20px;
+            margin-right: 50px;
             width: 151px;
             display: block;
 
@@ -170,6 +177,7 @@
         }
         @media screen and (min-width:1200px) {
             margin-bottom: 32px;
+            margin-right: 195px;
             width: 200px;
             font-size: 14px;
         }
@@ -182,9 +190,6 @@
             display: block;
             margin-top: 28px;
             margin-right: 33px;
-
-            width: 152px;
-            height: 152px;
         }
 
     @media screen and (min-width:1200px) {
@@ -222,6 +227,25 @@
         @media screen and (min-width:768px) {
             position: absolute;
             bottom: 0;
+        }
+    }
+
+    &__thumb {
+        display: flex;
+        align-items: center;
+    }
+
+    &__sub-thumb {
+        margin-left: auto;
+    }
+
+    &__img-div {
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width:768px) {
+            margin-right: 0;
+            margin-left: 0;
         }
     }
 }

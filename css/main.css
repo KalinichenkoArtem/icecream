@@ -60,12 +60,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 72px 32px 0 32px;
+    padding: 72px 32px 13px 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 74px 16px 0 17px;
+    padding: 74px 16px 65px 17px;
   }
 }
 .hero__title {
@@ -90,7 +90,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__title {
     margin-bottom: 28px;
-    width: 367px;
+    min-width: 367px;
     font-size: 38px;
     line-height: 1.26;
   }
@@ -101,6 +101,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero__title-span {
+    width: 182px;
     font-size: 24px;
     line-height: 0.54;
   }
@@ -113,6 +114,9 @@ img {
 }
 .hero__list, .hero__sub-list {
   list-style-type: none;
+}
+.hero__list {
+  margin-bottom: 16px;
 }
 .hero__item {
   display: none;
@@ -165,7 +169,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 8px;
+  margin-right: 18px;
   width: 62px;
   height: 24px;
   font-family: "Montserrat";
@@ -181,7 +185,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero__button {
-    margin-right: 12px;
+    margin-right: 34px;
     padding: 12px 34px;
     width: 134px;
     height: 42px;
@@ -221,6 +225,7 @@ img {
 @media screen and (min-width: 768px) {
   .hero__text {
     margin-bottom: 20px;
+    margin-right: 50px;
     width: 151px;
     display: block;
     font-weight: 400;
@@ -232,6 +237,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__text {
     margin-bottom: 32px;
+    margin-right: 195px;
     width: 200px;
     font-size: 14px;
   }
@@ -244,8 +250,6 @@ img {
     display: block;
     margin-top: 28px;
     margin-right: 33px;
-    width: 152px;
-    height: 152px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -291,5 +295,26 @@ img {
   .hero__main-img {
     position: absolute;
     bottom: 0;
+  }
+}
+.hero__thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero__sub-thumb {
+  margin-left: auto;
+}
+.hero__img-div {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__img-div {
+    margin-right: 0;
+    margin-left: 0;
   }
 }/*# sourceMappingURL=main.css.map */
