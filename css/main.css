@@ -224,7 +224,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero__text {
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 14px;
     margin-right: 50px;
     width: 151px;
     display: block;
@@ -236,10 +237,13 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero__text {
-    margin-bottom: 32px;
+    margin-top: 50px;
+    margin-bottom: 26px;
     margin-right: 195px;
     width: 200px;
+    height: 80px;
     font-size: 14px;
+    letter-spacing: 0;
   }
 }
 .hero__img {
@@ -279,20 +283,36 @@ img {
 .hero__text-div {
   display: block;
 }
-.hero__main-img {
+.hero__small-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
-  .hero__main-img {
+  .hero__small-img {
+    display: none;
+  }
+}
+.hero__medium-img {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__medium-img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+}
+.hero__big-img {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .hero__big-img {
+    display: block;
     position: absolute;
     bottom: 0;
   }
@@ -309,12 +329,53 @@ img {
   margin-left: auto;
 }
 .hero__img-div {
-  margin-left: auto;
-  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0;
+  margin-left: 26%;
 }
 @media screen and (min-width: 768px) {
   .hero__img-div {
     margin-right: 0;
     margin-left: 0;
+  }
+}
+.hero__bottom-mobile-frame {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero__bottom-mobile-frame {
+    display: none;
+  }
+}
+.hero__bottom-tablet-frame {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__bottom-tablet-frame {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 67px;
+    width: 100%;
+  }
+}
+.hero__bottom-desktop-frame {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .hero__bottom-desktop-frame {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 384px;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
