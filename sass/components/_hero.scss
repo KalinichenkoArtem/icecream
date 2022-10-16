@@ -1,7 +1,7 @@
 .hero {
     position: relative;
     padding: 110px 53px 0 20px;
-    background-color: #84A278;
+    background-color: var(--main-green);
 
     @media screen and (min-width:768px) {
         padding: 72px 32px 13px 32px;
@@ -10,7 +10,7 @@
     @media screen and (min-width:1200px) {
         padding: 74px 16px 65px 17px;
     }
-    
+
     &__title {
         margin-bottom: 32px;
         max-width: 247px;
@@ -20,8 +20,8 @@
         line-height: 1.27;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-    
-        color: #FCFCFC;
+
+        color: var(--main-white);
 
         @media screen and (min-width:768px) {
             margin-bottom: 20px;
@@ -41,7 +41,7 @@
     &__title-span {
         font-size: 34px;
         line-height: 96.5%;
-    
+
         @media screen and (min-width:768px) {
             width: 182px;
             font-size: 24px;
@@ -49,13 +49,14 @@
         }
 
         @media screen and (min-width:1200px) {
-            
+
             font-size: 38px;
             line-height: 1.26;
         }
     }
 
-    &__list, &__sub-list {
+    &__list,
+    &__sub-list {
         list-style-type: none;
     }
 
@@ -72,11 +73,11 @@
             font-weight: 900;
             font-size: 28px;
             line-height: 1.21;
-        
+
             text-align: right;
             text-transform: uppercase;
-            
-            color: #131313;
+
+            color: var(--main-dark);
         }
 
         @media screen and (min-width:1200px) {
@@ -93,10 +94,10 @@
             font-weight: 400;
             font-size: 8px;
             line-height: 1.25;
-        
+
             text-align: right;
-            
-            color: #FCFCFC;
+
+            color: var(--main-white);
         }
 
         @media screen and (min-width:1200px) {
@@ -121,13 +122,13 @@
         font-size: 8px;
         line-height: 10px;
         cursor: pointer;
-       
-    
+
+
         color: #131313;
         background-color: transparent;
-        border: 2px solid #F8D24E;
+        border: 2px solid var(--main-accent);
         border-radius: 8px;
- 
+
         @media screen and (min-width:1200px) {
             margin-right: 34px;
             padding: 12px 34px;
@@ -150,8 +151,8 @@
         align-items: center;
         text-align: center;
         text-decoration-line: underline;
-    
-        color: #F8D24E;
+
+        color: var(--main-accent);
 
         @media screen and (min-width:1200px) {
             font-size: 14px;
@@ -161,7 +162,7 @@
 
     &__text {
         display: none;
-    
+
         @media screen and (min-width:768px) {
             margin-top: 40px;
             margin-bottom: 14px;
@@ -172,19 +173,25 @@
             font-weight: 400;
             font-size: 12px;
             line-height: 140%;
-        
-        
-            color: #FCFCFC;
+
+
+            color: var(--main-white);
         }
+
         @media screen and (min-width:1200px) {
             margin-top: 50px;
             margin-bottom: 26px;
             margin-right: 195px;
             width: 200px;
             height: 80px;
+            
             font-size: 14px;
             letter-spacing: 0;
         }
+    }
+
+    &__svg {
+        fill:var(--main-white);
     }
 
     &__img {
@@ -196,10 +203,10 @@
             margin-right: 33px;
         }
 
-    @media screen and (min-width:1200px) {
+        @media screen and (min-width:1200px) {
             margin-top: 42px;
             margin-right: 14px;
-        
+
             width: 225px;
             height: 225px;
         }
@@ -220,37 +227,7 @@
 
     &__text-div {
         display: block;
-       
-    }
 
-    &__small-img {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-
-        @media screen and (min-width:768px) {
-            display: none;
-        }
-    }
-
-    &__medium-img {
-        display: none;
-
-        @media screen and (min-width:768px) and (max-width:1199px) {
-            display: block;
-            position: absolute;
-            bottom: 0;
-        }
-    }
-
-    &__big-img {
-        display: none;
-
-        @media screen and (min-width:1200px) {
-            display: block;
-            position: absolute;
-            bottom: 0;
-        }
     }
 
     &__thumb {
@@ -262,9 +239,9 @@
         margin-left: auto;
     }
 
-    &__img-div {
+    &__main-img {
         display: flex;
-        
+
         bottom: 0;
         margin-left: 26%;
 
@@ -301,7 +278,7 @@
 
     &__bottom-desktop-frame {
         display: none;
-        
+
         @media screen and (min-width:1200px) {
             display: block;
             position: absolute;
